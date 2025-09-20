@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to bottom, #E8E8E8, rgba(0, 0, 0, 0.6784313725));
+  color: #000000;
+  width: 100%;
+  min-height: 100vh;
+  min-height: 100dvh;
+  overflow: hidden;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 760px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.app-logo {
+  padding: 20px 24px;
+  background-image: linear-gradient(to bottom, #161616, #161616);
+  border-radius: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.section-title {
+  font-size: 46px;
+  font-weight: 600;
+  margin-top: 10px;
+}
+
+.section-description {
+  font-size: 16px;
+}
+
+.download-buttons {
+  margin-top: 60px;
+  display: flex;
+  gap: 20px 50px;
+}
+
+.download-button p {
+  display: flex;
+  flex-direction: column;
+}
+
+.download-button {
+  width: 100%;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 30px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  color: #000000;
+  text-decoration: none;
+  box-shadow: 0 20px 34px 0 rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease-in-out;
+}
+.download-button p {
+  font-size: 14px;
+  font-weight: 500;
+  text-align: start;
+  display: flex;
+  flex-direction: column;
+}
+.download-button p span {
+  font-size: 32px;
+  font-weight: 600;
+  line-height: 0.8;
+}
+.download-button:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 25px 40px rgba(0, 0, 0, 0.15);
+  background-color: white;
+  color: black;
+}
+.download-button:hover p span {
+  color: #161616;
+}
+.download-button:focus-visible {
+  outline: 2px dashed #161616;
+  outline-offset: 4px;
+}
+
+.footer-text {
+  margin-top: 60px;
+  font-size: 32px;
+  font-weight: 500;
+}
+.footer-text .open-app-link {
+  color: #ffffff;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+}
+.footer-text .open-app-link:hover {
+  text-decoration: none;
+}
+
+.download-icon {
+  margin-left: auto;
+  display: inline-block;
+}
+
+@media screen and (max-width: 756px) {
+  .section-title {
+    font-size: 28px;
+  }
+  .download-buttons {
+    flex-direction: column;
+    margin-top: 40px;
+  }
+  .footer-text {
+    margin-top: 40px;
+    font-size: 24px;
+  }
+  .app-logo {
+    max-width: 100%;
+  }
+  .download-button {
+    padding: 20px;
+  }
+  .download-button img {
+    width: 40px;
+    height: 40px;
+  }
+}/*# sourceMappingURL=style.css.map */
