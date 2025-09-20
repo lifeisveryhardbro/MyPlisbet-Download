@@ -110,7 +110,7 @@ $currentUrl = $protocol . "://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'
             openLink.addEventListener('click', function (e) {
                 e.preventDefault();
                 const start = Date.now();
-                window.location = "myPlisbet://"; 
+                window.location = "myplisbet://"; 
 
                 setTimeout(() => {
                     const elapsed = Date.now() - start;
